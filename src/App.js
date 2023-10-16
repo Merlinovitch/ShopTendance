@@ -2,19 +2,22 @@ import React from'react';
 import { useSelector } from 'react-redux';
 import { isEmpty } from './components/Utils';
 import './styles/index.css';
-import Product from "./components/Product";
+import Product from './components/Product';
+
 
 
 function App() {
-  const products = useSelector((state) => state.products);
+  const products = useSelector((state) => state.productReducer);
 
 
   return (
     <>
    <div className="content">
-        <div className="post-container">
+        <div className="product-card-container">
           {!isEmpty(products) &&
-            products.map((product, index) => <Product post={product} key={index} />)}
+            products.map((product, index) => 
+            <Product product={product} key={index} />
+            )}
         </div>
       </div>
 </>
