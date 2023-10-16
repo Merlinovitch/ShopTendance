@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from'react';
+import { useSelector } from 'react-redux';
+import { isEmpty } from './components/Utils';
+import './styles/index.css';
+import Product from "./components/Product";
+
 
 function App() {
+  const products = useSelector((state) => state.products);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+   <div className="content">
+        <div className="post-container">
+          {!isEmpty(products) &&
+            products.map((product, index) => <Product post={product} key={index} />)}
+        </div>
+      </div>
+</>
   );
 }
 
