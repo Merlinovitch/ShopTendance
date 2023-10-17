@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "T-shirt Blanc Classique",
-      "description": "Un t-shirt blanc basique pour toutes les occasions.z",
+      "description": "Un t-shirt blanc basique pour toutes les occasions.",
       "basePrice": 15,
       "salePrice": 10,
       "imageUrl": "https://img.freepik.com/photos-gratuite/t-shirt-blanc-bande-noire-haut_1340-42520.jpg?w=740&t=st=1697105173~exp=1697105773~hmac=bedfff8d9b7498a687441916f2fd27889c7d2cb721e27ca4174335f20b9f5539"
@@ -159,6 +159,14 @@
       "salePrice": "20",
       "imageUrl": "https://www.feter-recevoir.com/upload/image/deguisement-humoristique-stretching-homme-p-image-204742-grande.jpg",
       "id": 15
+    },
+    {
+      "id": 17,
+      "title": "Déguisement de Jacques Chirac",
+      "description": "Déguisement de Jacques Chirac, pour soirée costumée ou bar mitsva. Bernadette non fournie",
+      "basePrice": "50",
+      "salePrice": "20",
+      "imageUrl": "https://www.programme-tv.net/imgre/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2019.2F09.2F26.2Fa70725c5-41bc-4827-835f-ac71d4eeddb1.2Ejpeg/1200x600/crop-from/top/quality/80/mort-de-jacques-chirac-decouvrez-toutes-les-femmes-de-sa-vie-photos.jpg"
     }
   ]
 }

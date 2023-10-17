@@ -72,6 +72,7 @@ const Product = ({ product }) => {
             value={editContent}
             onChange={(e) => setEditContent(e.target.value)}
           ></textarea>
+          <br />
           <input type="submit" value="Valider modification" />
         </form>
       ) : (

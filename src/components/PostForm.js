@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addProduct } from "../actions/product.action";
 import { getProduct } from "../actions/product.action";
+import { isEmpty } from "./Utils";
 
 const PostForm = () => {
   const form = useRef();
@@ -18,6 +19,17 @@ const PostForm = () => {
       salePrice: form.current[3].value,
       imageUrl: form.current[4].value,
     };
+    if (
+      isEmpty(postData.title) ||
+      isEmpty(postData.description) ||
+      isEmpty(postData.basePrice) ||
+      isEmpty(postData.salePrice) ||
+      isEmpty(postData.imageUrl)
+    ) {
+      alert("Veuillez remplir tous les champs");
+      form.current.reset();
+      return;
+    }
 
     await dispatch(addProduct(postData));
     dispatch(getProduct());
