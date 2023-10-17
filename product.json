@@ -4,10 +4,6 @@
       "id": 1,
       "title": "Sneakers Trendy",
       "description": "Chaussures de sport légères et confortables.",
-      "categories": [
-        "Chaussures",
-        "Sport"
-      ],
       "basePrice": 70,
       "salePrice": 55,
       "imageUrl": "https://img.freepik.com/photos-gratuite/chaussure-sport-bleue-deliee-prete-action-generee-par-ia_188544-25546.jpg?w=1380&t=st=1697105043~exp=1697105643~hmac=cc665d1b4e43b9f351861a6582d33745651097e13e54936ae6254331580a9067"
@@ -15,11 +11,7 @@
     {
       "id": 2,
       "title": "T-shirt Blanc Classique",
-      "description": "Un t-shirt blanc basique pour toutes les occasions.",
-      "categories": [
-        "Vêtements",
-        "Homme"
-      ],
+      "description": "Un t-shirt blanc basique pour toutes les occasions.z",
       "basePrice": 15,
       "salePrice": 10,
       "imageUrl": "https://img.freepik.com/photos-gratuite/t-shirt-blanc-bande-noire-haut_1340-42520.jpg?w=740&t=st=1697105173~exp=1697105773~hmac=bedfff8d9b7498a687441916f2fd27889c7d2cb721e27ca4174335f20b9f5539"
@@ -159,6 +151,14 @@
       "salePrice": "40",
       "imageUrl": "https://www.feter-recevoir.com/upload/image/deguisement-humoristique-travesti-robe-rose-homme-p-image-204743-grande.jpg",
       "id": 14
+    },
+    {
+      "title": "Tenue de sport",
+      "description": "Magnifique tenue de sport, idéal pour frimer à Basic Fit",
+      "basePrice": "40",
+      "salePrice": "20",
+      "imageUrl": "https://www.feter-recevoir.com/upload/image/deguisement-humoristique-stretching-homme-p-image-204742-grande.jpg",
+      "id": 15
     }
   ]
 }

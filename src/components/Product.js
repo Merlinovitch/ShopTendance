@@ -6,7 +6,7 @@ import { deleteProduct } from "../actions/product.action";
 
 const Product = ({ product }) => {
   const [editToggle, setEditToggle] = useState(false);
-  const [editContent, setEditContent] = useState(product.content);
+  const [editContent, setEditContent] = useState(product.description);
   const dispatch = useDispatch();
 
   const handleEdit = (e) => {
