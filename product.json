@@ -44,10 +44,6 @@
       "id": 5,
       "title": "Casquette Sportive",
       "description": "Parfait pour protéger du soleil lors de vos activités extérieures.",
-      "categories": [
-        "Accessoires",
-        "Sport"
-      ],
       "basePrice": 20,
       "salePrice": 15,
       "imageUrl": "https://img.freepik.com/psd-gratuit/cap-maquette_1310-495.jpg?w=1380&t=st=1697105431~exp=1697106031~hmac=eecfb036d55aa2564367e767dc772cd24fc96c94495b9084a7074baccc5280b7"
@@ -56,10 +52,6 @@
       "id": 6,
       "title": "Jean Slim Bleu",
       "description": "Jean slim bleu, parfait pour un look décontracté.",
-      "categories": [
-        "Vêtements",
-        "Homme"
-      ],
       "basePrice": 50,
       "salePrice": 40,
       "imageUrl": "https://img.freepik.com/photos-gratuite/jeans_1203-8094.jpg?w=826&t=st=1697105476~exp=1697106076~hmac=10d911230064cdca7c2f470d464cb18bfc4a286cf7cc9d06372d7ee0b41a377d"
@@ -79,11 +71,7 @@
     {
       "id": 8,
       "title": "Short de Sport",
-      "description": "Confortable et respirant.",
-      "categories": [
-        "Vêtements",
-        "Sport"
-      ],
+      "description": "Confortable et respirant. Déjà porté 10 fois par Robert, lavage à prévoir",
       "basePrice": 30,
       "salePrice": 20,
       "imageUrl": "https://img.freepik.com/vecteurs-libre/concept-uniforme-football_52683-43144.jpg?w=826&t=st=1697105588~exp=1697106188~hmac=78979062a23f230e870fe357844d2f993d53aa4606835b999752d4f737263e02"
@@ -92,22 +80,14 @@
       "id": 9,
       "title": "Lunettes de Soleil",
       "description": "Protection UV avec style.",
-      "categories": [
-        "Accessoires",
-        "Unisexe"
-      ],
       "basePrice": 80,
-      "salePrice": 65,
+      "salePrice": "40",
       "imageUrl": "https://img.freepik.com/photos-gratuite/femme-mince-appreciant-dans-endroit-exotique-joyeuse-dame-bronzee-debout-pres-palmiers-souriant_197531-21139.jpg?w=1380&t=st=1697105627~exp=1697106227~hmac=9c59bc207cde7e8014f3706233e189f77836ae8df3069ee4cb29d6d6bb66f4b5"
     },
     {
       "id": 10,
       "title": "Chaussures de Randonnée",
       "description": "Robustes et imperméables.",
-      "categories": [
-        "Chaussures",
-        "Sport"
-      ],
       "basePrice": 110,
       "salePrice": 85,
       "imageUrl": "https://img.freepik.com/photos-gratuite/chaussures-grimpantes-robustes_1385-641.jpg?w=740&t=st=1697105677~exp=1697106277~hmac=482078ba3ae7986cb5e2237caaeefbbb47432ed146c3004dd72da03d0f7cb1d1"
@@ -127,22 +107,18 @@
     {
       "id": 12,
       "title": "Bikini à Rayures",
-      "description": "Parfait pour la plage.",
-      "categories": [
-        "Vêtements",
-        "Femme"
-      ],
+      "description": "Parfait pour la plage.\nJamais servi, je suis nudiste",
       "basePrice": 40,
       "salePrice": 30,
       "imageUrl": "https://img.freepik.com/photos-gratuite/maillot-bain-fond-jaune-isole_1303-13545.jpg?w=1380&t=st=1697105745~exp=1697106345~hmac=ac0dbee6a124ac0f32e039be6d18b8df61a56e1294423f2765d1286da55c21da"
     },
     {
+      "id": 13,
       "title": "Masque de Cheval",
       "description": "Idéal pour une promenade au parc ou pour vos soirées BDSM",
       "basePrice": "500",
-      "salePrice": "3",
-      "imageUrl": "https://i.etsystatic.com/16926547/r/il/5cb1c7/4514691022/il_570xN.4514691022_m296.jpg",
-      "id": 13
+      "salePrice": "10",
+      "imageUrl": "https://i.etsystatic.com/16926547/r/il/5cb1c7/4514691022/il_570xN.4514691022_m296.jpg"
     },
     {
       "title": "Déguisement Sirène",
@@ -167,6 +143,14 @@
       "basePrice": "50",
       "salePrice": "20",
       "imageUrl": "https://www.programme-tv.net/imgre/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ftel.2F2019.2F09.2F26.2Fa70725c5-41bc-4827-835f-ac71d4eeddb1.2Ejpeg/1200x600/crop-from/top/quality/80/mort-de-jacques-chirac-decouvrez-toutes-les-femmes-de-sa-vie-photos.jpg"
+    },
+    {
+      "title": "Services de Gigolo",
+      "description": "Très bel homme, social et agréable. Un plaisir à déshabiller. Idéal pour vos soirées mondaines",
+      "basePrice": "250",
+      "salePrice": "15",
+      "imageUrl": "https://media.licdn.com/dms/image/D4E03AQGQ59_bclXaGg/profile-displayphoto-shrink_800_800/0/1688989860157?e=2147483647&v=beta&t=t8nLAaVfjy8xsDCaaoRvxlhFywYAAKGqplppSh_8Hxg",
+      "id": 18
     }
   ]
 }

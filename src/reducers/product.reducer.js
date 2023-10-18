@@ -20,6 +20,7 @@ export default function productReducer(state = initialState, action) {
           return {
             ...product,
             description: action.payload.description,
+            salePrice: action.payload.salePrice,
           };
         } else return product;
       });

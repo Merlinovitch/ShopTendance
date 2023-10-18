@@ -3,7 +3,30 @@ body {
   animation: gradientAnimation 10s infinite alternate;
 }
 
+.edit {
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+.edit input{
+  text-align: center;
+  min-width: 3vw;
+  margin: 4px;
+}
+
+.edit textarea {
+  text-align: center;
+  min-width: 5vw;
+  margin: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .product-card-container {
   margin-left: auto;
   margin-right: auto;

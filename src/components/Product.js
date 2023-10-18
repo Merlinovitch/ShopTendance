@@ -7,6 +7,10 @@ import { deleteProduct } from "../actions/product.action";
 const Product = ({ product }) => {
   const [editToggle, setEditToggle] = useState(false);
   const [editContent, setEditContent] = useState(product.description);
+  const [editSalePrice, setEditSalePrice] = useState(product.salePrice);
+  const [editTitle, setEditTitle] = useState(product.title);
+  const [editImageUrl, setEditImageUrl] = useState(product.imageUrl);
+
   const dispatch = useDispatch();
 
   const handleEdit = (e) => {
@@ -14,11 +18,11 @@ const Product = ({ product }) => {
 
     const productData = {
       id: product.id,
-      title: product.title,
+      title: editTitle,
       description: editContent,
       basePrice: product.basePrice,
-      salePrice: product.salePrice,
-      imageUrl: product.imageUrl,
+      salePrice: editSalePrice,
+      imageUrl: editImageUrl,
     };
 
     dispatch(editProduct(productData));
@@ -30,13 +34,13 @@ const Product = ({ product }) => {
       <h2>{product.title}</h2>
       <div className="edit-delete">
         <svg
-          class="feather feather-edit"
+          className="feather feather-edit"
           fill="none"
           height="24"
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           viewBox="0 0 24 24"
           width="24"
           xmlns="http://www.w3.org/2000/svg"
@@ -46,13 +50,13 @@ const Product = ({ product }) => {
           <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
         </svg>
         <svg
-          class="feather feather-trash-2"
+          className="feather feather-trash-2"
           fill="none"
           height="24"
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           viewBox="0 0 24 24"
           width="24"
           xmlns="http://www.w3.org/2000/svg"
@@ -66,13 +70,33 @@ const Product = ({ product }) => {
       </div>
       <img src={product.imageUrl} alt={product.title} />
       {editToggle ? (
-        <form onSubmit={(e) => handleEdit(e)}>
+        <form className="edit" onSubmit={(e) => handleEdit(e)}>
+          Titre de l'article :
+          <input
+            type="text"
+            value={editTitle}
+            onChange={(e) => setEditTitle(e.target.value)}
+          />
+          Description :
           <textarea
             autoFocus={true}
             value={editContent}
             onChange={(e) => setEditContent(e.target.value)}
           ></textarea>
           <br />
+          Prix soldé :
+          <input
+            type="text"
+            value={editSalePrice}
+            onChange={(e) => setEditSalePrice(e.target.value)}
+          />
+          <br />
+          Photo :
+          <input
+            type="text"
+            value={editImageUrl}
+            onChange={(e) => setEditImageUrl(e.target.value)}
+          />
           <input type="submit" value="Valider modification" />
         </form>
       ) : (
