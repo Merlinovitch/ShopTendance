@@ -14,12 +14,13 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 
 function App() {
-  const products = useSelector((state) => state.productReducer);
-
   return (
     <>
       <BrowserRouter>
         <Navbar />
+        <div>
+          <PostForm />
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Hommes" element={<Hommes />} />
@@ -29,17 +30,6 @@ function App() {
           <Route path="/Bebes" element={<Bebes />} />
         </Routes>
       </BrowserRouter>
-      <div>
-        <PostForm />
-      </div>
-      <div className="content">
-        <div className="product-card-container">
-          {!isEmpty(products) &&
-            products.map((product, index) => (
-              <Product product={product} key={index} />
-            ))}
-        </div>
-      </div>
     </>
   );
 }

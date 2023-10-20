@@ -1,7 +1,25 @@
 import React from "react";
+import Product from "./Product";
+import { isEmpty } from "./Utils";
+import { useSelector } from "react-redux";
 
-const Bébés = () => {
-  return <div>Bébés</div>;
-};
+function Bebes() {
+  const products = useSelector((state) => state.productReducer);
 
-export default Bébés;
+  const bebesProducts = products.filter(
+    (product) => product.categories === "Bébés"
+  );
+
+  return (
+    <div className="content">
+      <div className="product-card-container">
+        {!isEmpty(bebesProducts) &&
+          bebesProducts.map((product, index) => (
+            <Product product={product} key={index} />
+          ))}
+      </div>
+    </div>
+  );
+}
+
+export default Bebes;
