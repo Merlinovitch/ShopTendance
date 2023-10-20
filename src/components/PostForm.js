@@ -18,6 +18,7 @@ const PostForm = () => {
       basePrice: form.current[2].value,
       salePrice: form.current[3].value,
       imageUrl: form.current[4].value,
+      categories: form.current[5].value,
     };
     if (
       isEmpty(postData.title) ||
@@ -39,6 +40,7 @@ const PostForm = () => {
   return (
     <>
       <div className="form-container">
+        <p>Ajouter un article</p>
         <form
           className="custom-form"
           ref={form}
@@ -74,6 +76,13 @@ const PostForm = () => {
             placeholder="Url de la photo"
             className="form-input"
           />
+          <select className="form-input">
+            <option value="Hommes">Hommes</option>
+            <option value="Femmes">Femmes</option>
+            <option value="Enfants">Enfants</option>
+            <option value="Ados">Ados</option>
+            <option value="Bébés">Bébés</option>
+          </select>
           <button type="submit" className="submit-button">
             Envoyer
           </button>
