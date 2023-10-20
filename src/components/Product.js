@@ -71,33 +71,44 @@ const Product = ({ product }) => {
       <img src={product.imageUrl} alt={product.title} />
       {editToggle ? (
         <form className="edit" onSubmit={(e) => handleEdit(e)}>
-          Titre de l'article :
-          <input
-            type="text"
-            value={editTitle}
-            onChange={(e) => setEditTitle(e.target.value)}
-          />
-          Description :
-          <textarea
-            autoFocus={true}
-            value={editContent}
-            onChange={(e) => setEditContent(e.target.value)}
-          ></textarea>
-          <br />
-          Prix soldé :
-          <input
-            type="text"
-            value={editSalePrice}
-            onChange={(e) => setEditSalePrice(e.target.value)}
-          />
-          <br />
-          Photo :
-          <input
-            type="text"
-            value={editImageUrl}
-            onChange={(e) => setEditImageUrl(e.target.value)}
-          />
-          <input type="submit" value="Valider modification" />
+          <div className="edit-input">
+            Titre de l'article : <br />
+            <input
+              type="text"
+              value={editTitle}
+              onChange={(e) => setEditTitle(e.target.value)}
+            />
+          </div>
+          <div className="edit-input">
+            Description :<br />
+            <textarea
+              autoFocus={true}
+              value={editContent}
+              onChange={(e) => setEditContent(e.target.value)}
+            ></textarea>
+          </div>
+
+          <div className="edit-input">
+            {" "}
+            Prix soldé :<br />
+            <input
+              type="text"
+              value={editSalePrice}
+              onChange={(e) => setEditSalePrice(e.target.value)}
+            />
+          </div>
+          <div className="edit-input">
+            Photo :<br />
+            <input
+              type="text"
+              value={editImageUrl}
+              onChange={(e) => setEditImageUrl(e.target.value)}
+            />
+            <br />
+            <button type="submit" value="Valider modification">
+              Valider
+            </button>
+          </div>
         </form>
       ) : (
         <p>{product.description}</p>

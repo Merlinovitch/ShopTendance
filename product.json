@@ -13,7 +13,6 @@
       "id": 2,
       "title": "Chemise en Lin Homme",
       "description": "Chemise légère en lin pour hommes.",
-      "categories": "Hommes",
       "basePrice": 30,
       "salePrice": 25,
       "imageUrl": "https://img.freepik.com/free-photo/side-view-happy-man-posing_23-2148563423.jpg?w=740&t=st=1697705062~exp=1697705662~hmac=840990f0d745cc158ec5742c76911b18ce60f83174c8be30876e5e6ee2afe51f"
@@ -22,7 +21,6 @@
       "id": 3,
       "title": "Jeans pour Ados",
       "description": "Jean élégant pour adolescents.",
-      "categories": "Ados",
       "basePrice": 25,
       "salePrice": 20,
       "imageUrl": "https://img.freepik.com/free-photo/full-length-young-slim-female-girl-denim-jeans-gray-background_155003-1644.jpg?w=740&t=st=1697705094~exp=1697705694~hmac=df215abaa0672e9495b604c7c8aeb8c1ade87570d920f965376a36efa1e32193"
@@ -40,7 +38,6 @@
       "id": 5,
       "title": "Body Bébé Mignon",
       "description": "Body adorable pour bébés.",
-      "categories": "Bébés",
       "basePrice": 15,
       "salePrice": 10,
       "imageUrl": "https://img.freepik.com/free-photo/cute-baby-going-their-first-steps_23-2149318231.jpg?w=740&t=st=1697705176~exp=1697705776~hmac=975b558d91712fd13bbb6a45dda3b35cfae65e638c2bec70911ad6c725bb98dd"
@@ -458,6 +455,14 @@
       "imageUrl": "https://lunitiale.fr/wp-content/uploads/2022/09/Isaure-021-scaled.jpg",
       "categories": "Femmes",
       "id": 51
+    },
+    {
+      "id": 52,
+      "title": "Déguisement bébé yoda",
+      "description": "un déguisement de bébé yoda",
+      "basePrice": "50",
+      "salePrice": "30",
+      "imageUrl": "https://cdn.deguisetoi.fr/images/rep_art/gra/334/9/334947/deguisement-bebe-yoda-pour-bebe-the-mandalorian-star-wars_334947.jpg"
     }
   ]
 }
