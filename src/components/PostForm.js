@@ -86,7 +86,7 @@ const PostForm = () => {
               placeholder="Url de la photo"
               className="form-input"
             />
-            <select className="form-input">
+            <select className="form-input" placeholder="Catégorie">
               <option value="Hommes">Hommes</option>
               <option value="Femmes">Femmes</option>
               <option value="Enfants">Enfants</option>
