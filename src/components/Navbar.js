@@ -8,13 +8,18 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <>
       <section className="top-nav">
         <div className="logo">
           <h1>
-            <Link to="/">Shop Tendance</Link>
+            <Link to="/" onClick={closeMenu}>
+              Shop Tendance
+            </Link>
           </h1>
         </div>
         <input
@@ -33,7 +38,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/Femmes" onChange={toggleMenu}>
+            <Link to="/Femmes" onClick={toggleMenu}>
               Femmes
             </Link>
           </li>
