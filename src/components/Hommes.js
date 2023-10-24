@@ -14,6 +14,7 @@ function Hommes() {
     const fetchData = async () => {
       try {
         await dispatch(getProduct());
+
         setHommesProducts(
           products.filter((product) => product.categories === "Hommes")
         );

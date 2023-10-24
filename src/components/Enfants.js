@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 function Enfants() {
   const products = useSelector((state) => state.productReducer);
-  const [enfantsProducts, setEnfantsProducts] = useState([]);
+  const [hommesProducts, setEnfantsProducts] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -27,8 +27,8 @@ function Enfants() {
   return (
     <div className="content">
       <div className="product-card-container">
-        {!isEmpty(enfantsProducts) &&
-          enfantsProducts.map((product, index) => (
+        {!isEmpty(hommesProducts) &&
+          hommesProducts.map((product, index) => (
             <Product product={product} key={index} />
           ))}
       </div>

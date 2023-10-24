@@ -12,12 +12,15 @@ function Femmes() {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        await dispatch(getProduct());
+      await dispatch(getProduct());
 
-        setFemmesProducts(
-          products.filter((product) => product.categories === "Femmes")
-        );
+      try {
+        {
+          !isEmpty(products) &&
+            setFemmesProducts(
+              products.filter((product) => product.categories === "Femmes")
+            );
+        }
       } catch (error) {
         console.error(error);
       }
