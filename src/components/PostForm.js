@@ -3,11 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { addProduct } from "../actions/product.action";
 import { getProduct } from "../actions/product.action";
 import { isEmpty } from "./Utils";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const PostForm = () => {
   const form = useRef();
-  const product = useSelector((state) => state.productReducer);
   const dispatch = useDispatch();
   const [afficherForm, setAfficherForm] = useState(false);
 
