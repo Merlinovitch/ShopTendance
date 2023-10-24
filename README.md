@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Développement d'un tableau de bord pour la gestion de produits e-commerce avec Navbar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+Développer une interface qui permettra :
 
-### `npm start`
+- d'afficher la liste des produits en vente, extraits du fichier products.json
+- de filtrer les produits en fonction de la catégorie sélectionnée dans la NavBar
+- d'ajouter un nouveau produit via un formulaire (bonus)
+- de modifier les produits (bonus)
+- de supprimer les produits (bonus)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Fonctionnalités attendues :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Affichage des produits : 
+- Une page qui liste tous les produits du fichier products.json avec des détails tels que le titre, description, categories, prix de base, prix soldé et image
+- Une NavBar qui permet de filtrer les produits en fonction de la catégorie sélectionnée
 
-### `npm test`
+Formulaire d'ajout de produit :
+Champs : le titre, description, categories, prix de base, prix soldé et image
+Validation des champs (par exemple : le prix doit être un nombre positif, l'URL doit être valide, etc.).
+Une fois le formulaire validé, le nouveau produit doit être ajouté au fichier products.json.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Intégration Redux :
+- Création d'un store Redux pour gérer l'état global des produits.
+- Actions pour récupérer les produits et ajouter un nouveau produit.
+- Réducteurs pour gérer les différentes actions et mettre à jour l'état du store.
+- Utilisation de middlewares si nécessaire, par exemple pour gérer les effets secondaires tels que la lecture/écriture dans le fichier products.json.
 
-### `npm run build`
+Intégration de Router:
+- La sélection d'une catégorie dans la NavBar utilise router pour modifier l'affichage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Instructions supplémentaires :
+Vous pouvez utiliser des outils comme Redux Toolkit pour simplifier la configuration de Redux.
+Pensez à séparer les composants React selon leurs responsabilités (par exemple : un composant pour le listing des produits, un autre pour le formulaire d'ajout).
+Assurez-vous que l'application soit bien structurée, maintenable et extensible pour de futures évolutions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bonus :
+Si vous terminez avant la date limite, vous pouvez ajouter des fonctionnalités supplémentaires telles que la mise à jour d'un produit existant, la suppression d'un produit ou l'implémentation d'une recherche par nom de produit.
