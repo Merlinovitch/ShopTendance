@@ -1,28 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Product from "./Product";
 import { getProduct } from "../actions/product.action";
 import { isEmpty } from "./Utils";
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
 
 function Ados() {
   const products = useSelector((state) => state.productReducer);
-  const [adosProducts, setAdosProducts] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         await dispatch(getProduct());
-        setAdosProducts(
-          products.filter((product) => product.categories === "Ados")
-        );
       } catch (error) {
         console.error(error);
       }
     };
     fetchData();
-  }, [dispatch, products]);
+  }, [dispatch]);
+
+  let adosProducts = Array.isArray(products) ? products : [];
+
+  adosProducts = adosProducts.filter(
+    (product) => product.categories === "Ados"
+  );
 
   return (
     <div className="content">

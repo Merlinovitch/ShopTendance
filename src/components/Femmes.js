@@ -1,33 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Product from "./Product";
 import { getProduct } from "../actions/product.action";
 import { isEmpty } from "./Utils";
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
 
 function Femmes() {
   const products = useSelector((state) => state.productReducer);
-  const [femmesProducts, setFemmesProducts] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchData = async () => {
-      await dispatch(getProduct());
-
       try {
-        {
-          !isEmpty(products) &&
-            setFemmesProducts(
-              products.filter((product) => product.categories === "Femmes")
-            );
-        }
+        await dispatch(getProduct());
       } catch (error) {
         console.error(error);
       }
     };
-
     fetchData();
-  }, [dispatch, products]);
+  }, [dispatch]);
+
+  let femmesProducts = Array.isArray(products) ? products : [];
+
+  femmesProducts = femmesProducts.filter(
+    (product) => product.categories === "Femmes"
+  );
 
   return (
     <div className="content">
