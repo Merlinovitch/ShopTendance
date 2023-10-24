@@ -10,6 +10,7 @@ const Product = ({ product }) => {
   const [editSalePrice, setEditSalePrice] = useState(product.salePrice);
   const [editTitle, setEditTitle] = useState(product.title);
   const [editImageUrl, setEditImageUrl] = useState(product.imageUrl);
+  const [editCategories, setEditCategories] = useState(product.categories);
 
   const dispatch = useDispatch();
 
@@ -23,6 +24,7 @@ const Product = ({ product }) => {
       basePrice: product.basePrice,
       salePrice: editSalePrice,
       imageUrl: editImageUrl,
+      categories: editCategories,
     };
 
     dispatch(editProduct(productData));
@@ -104,6 +106,22 @@ const Product = ({ product }) => {
               value={editImageUrl}
               onChange={(e) => setEditImageUrl(e.target.value)}
             />
+            <div className="edit-input">
+              <br />
+              Categorie :<br />
+              <select
+                placeholder="Catégorie"
+                className="edit-select"
+                value={editCategories}
+                onChange={(e) => setEditCategories(e.target.value)}
+              >
+                <option value="Hommes">Hommes</option>
+                <option value="Femmes">Femmes</option>
+                <option value="Enfants">Enfants</option>
+                <option value="Ados">Ados</option>
+                <option value="Bébés">Bébés</option>
+              </select>
+            </div>
             <br />
             <button type="submit" value="Valider modification">
               Valider

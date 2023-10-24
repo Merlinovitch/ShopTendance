@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addProduct } from "../actions/product.action";
 import { getProduct } from "../actions/product.action";
 import { isEmpty } from "./Utils";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const PostForm = () => {
   const form = useRef();
@@ -36,7 +36,6 @@ const PostForm = () => {
 
     await dispatch(addProduct(postData));
     dispatch(getProduct());
-    form.current.reset();
   };
   const changerForm = () => {
     setAfficherForm(!afficherForm);
@@ -54,7 +53,10 @@ const PostForm = () => {
           <form
             className="custom-form"
             ref={form}
-            onSubmit={(e) => handleForm(e)}
+            onSubmit={(e) => {
+              changerForm();
+              handleForm(e);
+            }}
           >
             <input
               type="text"

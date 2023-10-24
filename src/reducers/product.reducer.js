@@ -21,6 +21,8 @@ export default function productReducer(state = initialState, action) {
             ...product,
             description: action.payload.description,
             salePrice: action.payload.salePrice,
+            imageUrl: action.payload.imageUrl,
+            categories: action.payload.categories,
           };
         } else return product;
       });
