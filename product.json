@@ -13,10 +13,10 @@
       "id": 2,
       "title": "Chemise en Lin Homme",
       "description": "Chemise légère en lin pour hommes.",
-      "categories": "Hommes",
       "basePrice": 30,
       "salePrice": 25,
-      "imageUrl": "https://img.freepik.com/free-photo/side-view-happy-man-posing_23-2148563423.jpg?w=740&t=st=1697705062~exp=1697705662~hmac=840990f0d745cc158ec5742c76911b18ce60f83174c8be30876e5e6ee2afe51f"
+      "imageUrl": "https://img.freepik.com/free-photo/side-view-happy-man-posing_23-2148563423.jpg?w=740&t=st=1697705062~exp=1697705662~hmac=840990f0d745cc158ec5742c76911b18ce60f83174c8be30876e5e6ee2afe51f",
+      "categories": "Hommes"
     },
     {
       "id": 3,

@@ -19,6 +19,7 @@ export default function productReducer(state = initialState, action) {
         if (product.id === action.payload.id) {
           return {
             ...product,
+            title: action.payload.title,
             description: action.payload.description,
             salePrice: action.payload.salePrice,
             imageUrl: action.payload.imageUrl,
@@ -28,6 +29,7 @@ export default function productReducer(state = initialState, action) {
       });
     case DELETE_PRODUCT:
       return state.filter((product) => product.id !== action.payload);
+
     default:
       return state;
   }

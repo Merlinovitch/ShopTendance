@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addProduct } from "../actions/product.action";
 import { getProduct } from "../actions/product.action";
 import { isEmpty } from "./Utils";

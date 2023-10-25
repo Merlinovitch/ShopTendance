@@ -83,11 +83,12 @@ const Product = ({ product }) => {
           </div>
           <div className="edit-input">
             Description :<br />
-            <textarea
+            <input
+              type="text"
               autoFocus={true}
               value={editContent}
               onChange={(e) => setEditContent(e.target.value)}
-            ></textarea>
+            ></input>
           </div>
 
           <div className="edit-input">
@@ -129,10 +130,12 @@ const Product = ({ product }) => {
           </div>
         </form>
       ) : (
-        <p>{product.description}</p>
+        <>
+          <p>{product.description}</p>
+          <p className="barre">{product.basePrice}€</p>
+          <p className="price">{product.salePrice}€</p>
+        </>
       )}
-      <p className="barre">{product.basePrice}€</p>
-      <p className="price">{product.salePrice}€</p>
     </div>
   );
 };

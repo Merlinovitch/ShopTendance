@@ -12,10 +12,7 @@ const Post = ({ post }) => {
           alt="edit"
           onClick={() => setEditToggle(!editToggle)}
         />
-        <img
-          src="./icons/delete.svg"
-          alt="delete"
-        />
+        <img src="./icons/delete.svg" alt="delete" />
       </div>
 
       <h2>{post.title}</h2>
@@ -26,7 +23,7 @@ const Post = ({ post }) => {
       />
 
       {editToggle ? (
-        <form>
+        <form id="valider">
           <textarea autoFocus={true} defaultValue={post.content}></textarea>
           <input type="submit" value="Valider modification" />
         </form>
