@@ -137,7 +137,7 @@ body {
 }
 
 #search-button {
-  width: 5vw;
+  width: fit-content;
   height: 4vh;
   background-color: #007BFF; 
   color: #fff;
